@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikini Amanda | Fashion Designer & Creative Vision</title>
+
+  <!-- External -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Local -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 1. HERO -->
+  <section id="hero" class="full-screen center">
+    <div class="hero-content">
+      <h1 class="fade-in">Nikini Amanda</h1>
+      <p class="fade-in delay-1">Fashion Designer & Creative Vision</p>
+      <a href="#portfolio" class="btn fade-in delay-2">View Work</a>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT -->
+  <section id="about" class="section observe">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Nikini Amanda is a contemporary fashion designer whose work sits at the intersection of
+        architectural silhouettes and fluid femininity. With a foundation in haute couture and
+        a sharp eye for textile innovation, every collection tells a story of empowered elegance.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. PORTFOLIO -->
+  <section id="portfolio" class="section observe">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="couture">Couture</button>
+        <button data-filter="rtw">Ready-to-Wear</button>
+        <button data-filter="editorial">Editorial</button>
+      </div>
+
+      <div class="grid">
+        <!-- Couture -->
+        <figure class="item couture" data-modal="img1">
+          <img src="https://source.unsplash.com/800x1000/?fashion,couture" alt="Couture">
+          <figcaption>Couture</figcaption>
+        </figure>
+        <!-- Ready-to-Wear -->
+        <figure class="item rtw" data-modal="img2">
+          <img src="https://source.unsplash.com/800x1000/?fashion,streetwear" alt="Ready-to-Wear">
+          <figcaption>Ready-to-Wear</figcaption>
+        </figure>
+        <!-- Editorial -->
+        <figure class="item editorial" data-modal="img3">
+          <img src="https://source.unsplash.com/800x1000/?fashion,editorial" alt="Editorial">
+          <figcaption>Editorial</figcaption>
+        </figure>
+        <!-- duplicates for density -->
+        <figure class="item couture" data-modal="img4">
+          <img src="https://source.unsplash.com/800x1000/?dress,black" alt="Couture">
+          <figcaption>Couture</figcaption>
+        </figure>
+        <figure class="item rtw" data-modal="img5">
+          <img src="https://source.unsplash.com/800x1000/?fashion,model" alt="Ready-to-Wear">
+          <figcaption>Ready-to-Wear</figcaption>
+        </figure>
+        <figure class="item editorial" data-modal="img6">
+          <img src="https://source.unsplash.com/800x1000/?vogue" alt="Editorial">
+          <figcaption>Editorial</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SKILLS -->
+  <section id="skills" class="section observe">
+    <div class="container">
+      <h2>Skills & Expertise</h2>
+      <ul class="skill-list">
+        <li>Fashion Illustration</li>
+        <li>Pattern Making</li>
+        <li>Textile Knowledge</li>
+        <li>Styling & Creative Direction</li>
+        <li>Adobe Illustrator / Photoshop</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. LOOKBOOK -->
+  <section id="lookbook" class="section observe">
+    <div class="container">
+      <h2>Lookbook</h2>
+      <div class="carousel">
+        <button class="carousel__btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel__track-wrapper">
+          <ul class="carousel__track">
+            <li><img src="https://source.unsplash.com/1200x800/?fashion,runway" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x800/?fashion,black" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x800/?fashion,gown" alt=""></li>
+            <li><img src="https://source.unsplash.com/1200x800/?fashion,portrait" alt=""></li>
+          </ul>
+        </div>
+        <button class="carousel__btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT -->
+  <section id="contact" class="section observe">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer>
+    <p>© 2026 Nikini Amanda</p>
+    <button id="backTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <span class="modal__close">&times;</span>
+    <img class="modal__img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
